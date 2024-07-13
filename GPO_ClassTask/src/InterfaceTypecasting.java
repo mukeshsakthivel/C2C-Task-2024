@@ -1,5 +1,16 @@
+class A{
+    void shows()
+    {
+        System.out.println("A");
+    }
 
-class B extends  c{
+    void sp(){
+        System.out.println("sanhasudas");
+    }
+
+}
+
+class B extends  A{
     void show1()
     {
         System.out.println("B");
@@ -8,15 +19,10 @@ class B extends  c{
     {
 
     }
-    class A{
-        void show1()
-        {
-            System.out.println("A");
-        }
 
-    }
     void shows()
     {
+        super.shows();
         System.out.println("as");
     }
 }
@@ -48,8 +54,12 @@ public class InterfaceTypecasting {
         ob.show1();
         ob.showsaa();
         */
-        c cc=new B();
+       /* c cc=new B();
         cc.show1();
+*/
+        A ob=new B();
+        ob.shows();
+        ob.sp();
 
     }
 }
